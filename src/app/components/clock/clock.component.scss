@@ -1,0 +1,43 @@
+.clock{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(247, 231, 231);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+    position: relative;
+    
+    & > * {
+        position:absolute;
+        transform:translateY(-50%) translateX(5%);
+        background-color: #000;
+        clip-path: polygon(45% 0%, 40% 100%, 50% 100%);
+    }
+    .time{
+        clip-path:none;
+        background:none;
+        transform: none;
+    }
+    .center{
+        width: 10px;
+        height: 10px;
+        clip-path: none;
+        transform:translateY(0%) ;
+        border-radius: 100%;
+        border: 2px solid #fff;
+    }
+    .hour{
+        width: 40px;
+        height: 90px;
+    }
+    .minute{
+        width: 30px;
+        height: 100px;
+    }
+    .second{
+        width: 20px;
+        height: 120px;
+    }
+}
