@@ -19,7 +19,7 @@ export class ClockComponent implements OnInit {
       (res) => {         
         const sdeg = res.second*6 + 'deg'
         const mdeg = res.minute*6 + 'deg'
-        const hdeg = res.hour*24/360 + res.minute*30/60  + 'deg'
+        const hdeg = res.hour*360/12 + res.minute*30/60  + 'deg'
         this.secondDeg = {'transform': 'rotate('+sdeg+') translateY(-50%)' } 
         this.minuteDeg = {'transform': 'rotate('+mdeg+') translateY(-50%) translateX(5%)' } 
         this.hourDeg = {'transform': 'rotate('+hdeg+') translateY(-50%) translateX(5%)' } 
