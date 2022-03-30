@@ -1,10 +1,6 @@
-<div class="clock">
-    <div class="center"></div>
-    <div class="hour" [ngStyle]="hourDeg"></div>
-    <div class="minute" [ngStyle]="minuteDeg"></div>
-    <div class="second" [ngStyle]="secondDeg"></div>
- 
-        <div class="time" [ngStyle]="position(item)" *ngFor="let item of time">{{item}}</div> 
-
+<div class="clock" [ngStyle]="clockSizeStyle">
+  <div class="center"></div>
+  <div class="hour" [ngStyle]="hourDeg"></div>
+  <div class="minute" [ngStyle]="minuteDeg"></div>
+  <div class="second" [ngStyle]="secondDeg"></div>
 </div>
-
